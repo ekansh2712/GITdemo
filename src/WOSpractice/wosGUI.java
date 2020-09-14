@@ -7,6 +7,12 @@ import org.testng.annotations.Test;
 public class wosGUI {
 	
 	@Test
+	public void GITHUB()
+	{
+		System.out.println("wosGUI class updated here for GIT Hub");
+	}
+	
+	@Test
 	public void AddressValidation()
 	{
 	System.out.println("Address Validaion Successfully Done");
