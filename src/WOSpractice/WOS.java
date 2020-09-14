@@ -9,6 +9,13 @@ import org.testng.annotations.Test;
 
 public class WOS {
 	
+
+	@Test
+	public void GITHUB()
+	{
+		System.out.println("wosGUI class updated for second time ");
+	}
+	
 	@AfterTest
 	public void cacheClear()
 	{
