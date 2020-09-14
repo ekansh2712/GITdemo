@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3">            <!-- running 2 tests parallely  -->
+<listeners>
+<listener class-name= "practice.Listeners" />	
+</listeners>
+  <test thread-count="5" name="Twitter">
+  <parameter name= "url check" value = "https://twitter.com/explore"/> 
+   <parameter name= "usernameXpath" value = "//input[@name='session[username_or_email]']"/>
+   <parameter name= "pwdXpath" value = "//input[@name='session[password]']"/> 
+   <classes>
+      <class name="practice.FirstProgram"/>
+    </classes>
+  </test> <!-- Twitter -->
+ 
+  <test name="SecondClass">
+  <classes>
+  <class name="practice.SecondClass"/>
+  </classes>
+  </test>
+</suite> <!-- Suite -->

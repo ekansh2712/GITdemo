@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="WOS-WIPS-IPPS2">
+  <test thread-count="5" name="Functionality">
+  <parameter name= "url check" value = "https://www.google.com/"/> 
+  <parameter name= "Xpath" value= "//input[@name='q']" />
+    <classes>
+      <class name="WOSpractice.WIPS"/>
+      <class name="WOSpractice.IPPS"/>
+      <class name="WOSpractice.WOS"/>
+    </classes>
+  </test> <!-- Test -->
+ </suite> <!-- Suite --> 
+ 	
+

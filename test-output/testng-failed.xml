@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="practice.Listeners"/>
+  </listeners>
+  <test thread-count="3" name="Twitter(failed)" parallel="tests">
+    <parameter name="usernameXpath" value="//input[@name=&#039;session[username_or_email]&#039;]"/>
+    <parameter name="pwdXpath" value="//input[@name=&#039;session[password]&#039;]"/>
+    <parameter name="url check" value="https://twitter.com/explore"/>
+    <classes>
+      <class name="practice.FirstProgram">
+        <methods>
+          <include name="TestToFail"/>
+          <include name="demomethod2"/>
+        </methods>
+      </class> <!-- practice.FirstProgram -->
+    </classes>
+  </test> <!-- Twitter(failed) -->
+</suite> <!-- Failed suite [Suite] -->
