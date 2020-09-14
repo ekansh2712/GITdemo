@@ -5,6 +5,12 @@ import org.testng.annotations.Test;
 public class WIPS {
 	
 	@Test
+	public void GITHUB()
+	{
+		System.out.println("wosGUI class updated for third time ");
+	}
+	
+	@Test
 	public void RTCircuits()
 	{
 		System.out.println("RT circuits execution");
